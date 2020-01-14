@@ -1,0 +1,35 @@
+Omer Lavian
+Regexone Solutions
+
+1. abc
+
+2. 123
+
+3. ...\.
+
+4. [cmf]an or [^drp]an
+
+5. [^b]og or [hd]og
+
+6. [ABC][nop]
+
+7. waz{2,}up
+
+8. a+b*c+
+
+9. \d+ files? found\?
+
+10. \d\.\s+abc
+
+11. ^Mission successful$
+
+12. ^(file.+)\.pdf$
+
+13. (\w+\s+(\d+)) or ([A-Z][a-z][a-z]\s+(\d+))
+
+14. (\d{4})x(\d\{3,}) or (\d+)x(\d+)
+
+15. I love (cats|dogs)
+
+16. .*
+ I tried the following, but even though I didn't capture everything it let me move on: The\w* \w+ \w+ \w+ \w+ \w+ \w+ \w+(\%)* \w+(\w+)* 
