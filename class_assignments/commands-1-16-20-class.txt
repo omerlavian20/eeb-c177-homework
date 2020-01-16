@@ -1,0 +1,474 @@
+    1  cd downloads
+    2  cd Downloads/
+    3  sha256sum Anaconda3-2019.10-Linux-x86_64.sh 
+    4  bash Anaconda3-2019.10-Linux-x86_64.sh 
+    5  source ~/.bashrc
+    6  conda list
+    7  python --version
+    8  conda update --all --yes
+    9  jupyter notebook
+   10  sudo apt update
+   11  sudo apt install git
+   12  git --version
+   13  sudo add-apt-repository ppa:webupd8team/atom
+   14  sudo apt-get update
+   15  sudo apt-get install atom
+   16  sudo apt-get install nano
+   17  conda install -c r rstudio
+   18  sudo apt -y install r-base
+   19  sudo apt install gdebi-core
+   20  cd Downloads/
+   21  ls
+   22  sudo gdebi rstudio-1.2.5033-amd64.deb 
+   23  ls
+   24  rstudio
+   25  cd Desktop/
+   26  vim
+   27  nano test-file.txt
+   28  touch new.html
+   29  nano new.html
+   30  nano new.html 
+   31  rm test-file.txt 
+   32  rm new.html 
+   33  git --version
+   34  cd ..
+   35  cd..
+   36  cd ..
+   37  git clone https://github.com/omerlavian20/eeb-c177-homework
+   38  git clone https://github.com/omerlavian20/eeb-c177-homework.git
+   39  ls
+   40  git clone https://github.com/CSB-BOOK/CSB.GIT
+   41  git clone https://github.com/csb-book/csb.git
+   42  git
+   43  git config --global user.name "Omer Lavian"
+   44  git config --global user.email "omerlavian20@g.ucla.edu"
+   45  pwd
+   46  mkdir Developer
+   47  ls
+   48  cd Developer
+   49  pwd
+   50  mkdrir repos
+   51  mkdir repos
+   52  ls
+   53  cd repos
+   54  pwd
+   55  git clone http://github.com/omerlavian20/eeb-c177-homework
+   56  ls
+   57  cd eeb-c177-homework
+   58  pwd
+   59  touch testing_file.txt
+   60  ls
+   61  nano testing_file.txt
+   62  git status
+   63  git add -A
+   64  git commit -m "added to testing_file.txt"
+   65  git push origin master
+   66  rm testing_file.txt
+   67  mkdir lab-exercises
+   68  cd lab-exercises
+   69  mkdir week-one
+   70  cd week-one
+   71  nano food-log.txt
+   72  git.add -A
+   73  git add -A
+   74  git command -m "morning meal update 1/6/20"
+   75  git commit -m "morning meal update 1/6/20"
+   76  git push origin master
+   77  nano food-log.txt
+   78  git add -A
+   79  git command -m "evening meal update 1/6/20"
+   80  git commit -m "evening meal update 1/6/20"
+   81  git push origin master
+   82  nano food-log.txt
+   83  git add -A
+   84  git command -m "evening meal update 1/6/20 added"
+   85  git commit -m "evening meal update 1/6/20  edited"
+   86  git push origin master
+   87  nano food-log.txt
+   88  git add -A
+   89  git commit -m "My sleep schedule sucks meal log update"
+   90  git push origin master
+   91  nano food-log.txt
+   92  git add -A
+   93  git commit -m "Edit to first entry so that log is consistent"
+   94  git push origin master
+   95  nano README.md
+   96  nano food-log.txt
+   97  git add -A
+   98  git commit -m "food log update 1:50 PM 1/7/20"
+   99  git push origin master
+  100  nano food-log.txt
+  101  git add -A
+  102  git commit -m "fixing a typo"
+  103  git push origin master
+  104  nano food-log.txt
+  105  git add -A
+  106  git commit -m "food log update 12:39 AM 1/8/20"
+  107  git push origin master
+  108  nano food-log.txt
+  109  git add -A
+  110  git commit -m "food log entry 1/8/20 @ 7:24 PM"
+  111  git push origin master
+  112  nano food-log.txt
+  113  git add -A
+  114  git commit -m "typo fix"
+  115  git push origin master
+  116  nano food-log.txt
+  117  pwd
+  118  cd ~/repos
+  119  ls
+  120  cd ..
+  121  git clone https://github.com/csb-book/csb.git
+  122  ls
+  123  git clone https://github.com/csb-book/csb.git
+  124  ls
+  125  cd eeb-c177-homework
+  126  ls
+  127  cd lab-exercises
+  128  ls
+  129  cd week-one
+  130  ls
+  131  nano food-log.txt
+  132  git add -A
+  133  git commit -m "update food log 1/9/20 @ 5:34 PM"
+  134  git push origin master
+  135  nano foog-log.txt
+  136  nano food-log.txt
+  137  git add -A
+  138  git commit -m "Update food log 1/9/20 @ 11:32 PM"
+  139  git push origin master
+  140  nano food-log.txt
+  141  git add -A
+  142  git commit -m "food log update 1/10/20 ! 11:21 AM"
+  143  git push origin master
+  144  nano food-log.txt
+  145  git add -A
+  146  git commit -m "Typo fix"
+  147  git push origin master
+  148  nano food-log.txt
+  149  git add -A
+  150  git commit -m "final food log entry"
+  151  git push origin master
+  152  ls
+  153  cd Developer
+  154  ls
+  155  cd repos
+  156  ls
+  157  cd DEveloper
+  158  cd Developer
+  159  ls
+  160  cd repos
+  161  ls
+  162  cd eeb-c177-homework
+  163  ls
+  164  cd lab-exercises
+  165  ls
+  166  mkdir week 2
+  167  ls
+  168  rm week
+  169  git rm -r 2
+  170  git rm -r week
+  171  git rm -r week 2
+  172  mkdir week-two
+  173  ls
+  174  cd week-two
+  175  touch regexon-solutions.txt
+  176  nano regexon-solutions.txt
+  177  nano regexone-solutions.txt
+  178  git rm -r week
+  179  cd ..
+  180  ls
+  181  git rm -r 2
+  182  git rm r week
+  183  git rm -r week
+  184  rm -r 2
+  185  ls
+  186  rm -r week
+  187  ls
+  188  cd week-two
+  189  ls 
+  190  rm -r regexon-solutions.txt
+  191  ls
+  192  nano meme.txt
+  193  ls
+  194  nano regexone-solutions.txt
+  195  la
+  196  ls
+  197  nano regexone-solutions.txt
+  198  git add -A
+  199  git commit -m "Regular Expressions Tutorial"
+  200  git push origin master
+  201  cd..
+  202  cd ..
+  203  ;s
+  204  ls
+  205  cd eeb-c177-homework
+  206  ls
+  207  mkdir class-assignments
+  208  ls
+  209  cd class-assignments
+  210  mkdir class_exercises_1-14_2020.
+  211  ls
+  212  cd class_exercises_1_14_2020.
+  213  cd ..
+  214  ls
+  215  cd csb
+  216  cd ..
+  217  ls
+  218  cd eeb-c177-homework
+  219  ls
+  220  cd class-assignments
+  221  ls
+  222  cd class_exercises_1_14_2020.
+  223  rm -r class_exercises_1-14_2020.
+  224  ls
+  225  mkdir class_exercises_1-14_2020
+  226  ls
+  227  cd ..
+  228  ls
+  229  rm -r class-assignments
+  230  ls
+  231  mkdir class_assignments_1-14_2020
+  232  ls
+  233  cd class_assignments_1-14_2020
+  234  pwd
+  235  mv ~/Desktop/data-shell.zip ~/Developers/repos/eeb-c177-homework/class_assignments_1-14_2020/
+  236  ls
+  237  cd Downloads
+  238  ls
+  239  mv ~/Downloads/data-shell.zip ~/Developer/repos/eeb-c177-homeowork/class_assignments_1-14_2020/
+  240  pwd
+  241  ls
+  242  rm -r 
+  243  rm -r data-shell
+  244  ls
+  245  cd Developer
+  246  ls
+  247  cd repos
+  248  ls
+  249  cd eeb-c177-homework
+  250  ls
+  251  cd class_assignments_1_14_2020
+  252  cd class_assignments_1-14_2020
+  253  pwd
+  254  ls
+  255  cd data-shell
+  256  ls
+  257  nano notes.txt
+  258  ls
+  259  pwd
+  260  cd..
+  261  cd ..
+  262  touch meme.txt
+  263  ls
+  264  nano meme.txt
+  265  ls
+  266  git add -A
+  267  git commit -m "memery"
+  268  ls
+  269  git push origin master
+  270  rm -r meme.txt
+  271  git add -A
+  272  git commit -m "remove meme file"
+  273  git push origin master
+  274  touch "badly named file.txt"
+  275  ls
+  276  pwd
+  277  cp badly named file.txt
+  278  cp badly named file.txt ~
+  279  cp "badly named file.txt" ~
+  280  cd
+  281  ls
+  282  cp badly\ named\ file.txt ~
+  283  man touch
+  284  man cd
+  285  man ls
+  286  man touch
+  287  man cd ..
+  288  man ls
+  289  ls
+  290  ls -s
+  291  man ls
+  292  ls -s --size
+  293  man ls
+  294  pwd
+  295  ls
+  296  cd Developer
+  297  ls
+  298  cd repos
+  299  ls
+  300  cd eeb-c177-homework
+  301  ls
+  302  mv ~/Downloads/data-shell.zip ~/Developer/repos/eeb-c177-homework/class_assignments_1-14-2020/
+  303  ls -F
+  304  ls
+  305  cd data-shell
+  306  ls
+  307  ls -F
+  308  pwd
+  309  ls -F
+  310  mkdir thesis
+  311  ls -F
+  312  ls -F thesis
+  313  ls 
+  314  cd thesis
+  315  ls -f
+  316  ls -F
+  317  cd ..
+  318  ls
+  319  cd thesis
+  320  nano draft.txt
+  321  ls
+  322  touch my_file.txt
+  323  ls -1
+  324  man ls
+  325  ls -s
+  326  nano my_file.txt
+  327  cd ..
+  328  mv thesis/draft.txt thesis/quotes.txt
+  329  ls
+  330  ls thesis
+  331  mv thesis/quotes.txt .
+  332  ls thesis
+  333  ls quotes.txt
+  334  ls -F
+  335  cp quotes.txt thesis/quotations.txt
+  336  ls quotes.txt thesis/quotations.txt
+  337  cp -r thesis theis_backup
+  338  cp -r thesis thesis_backuo
+  339  cp -r thesis thesis_backup
+  340  ls thesis thesis_backup
+  341  lls
+  342  ls
+  343  rm quotes.txt
+  344  ls quotes.txt
+  345  rm -i thesis_backup/quotations.txt
+  346  mkdir backup
+  347  ls
+  348  cp amino-acids.txt animals.txt backup/
+  349  ls -F
+  350  cd molecules
+  351  ls
+  352  cd ..
+  353  cd creatures
+  354  ls
+  355  cd ..
+  356  cp notes.txt solar.pdf backup/
+  357  cs backup
+  358  cd backup
+  359  ls
+  360  cp notes.txt solar.pdf basilisk.dat
+  361  cd ..
+  362  ls
+  363  cd molecules
+  364  ls *t*ane.pbd
+  365  ls
+  366  ls *t*ane.pdb
+  367  ls *t??ne.pdb
+  368  man -F
+  369  man ls
+  370  man cd
+  371  ls -1
+  372  ls
+  373  nano shell_responses.txt
+  374  ls
+  375  git add -shell_responses.txt
+  376  git add -A
+  377  git commit -m "Shell Tutorial Responses"
+  378  git push origin master
+  379  pwd
+  380  cp ~/CSB/unix/data/Buzzard2015_about.txt ~/CSB/unix/sandbox
+  381  ~
+  382  cd ..
+  383  ls
+  384  cd csb
+  385  ls
+  386  cd unix
+  387  ls 
+  388  cd data
+  389  cp Buzzard2015_about.txt ../sandbox/buzz.txt
+  390  touch file1.txt file2.txt file3.txt file4.txt file5.txt
+  391  ls
+  392  rm file1.txt file2.txt file3.txt file4.txt
+  393  mv file5.txt ../sandbbox
+  394  cd ..
+  395  ls
+  396  cd sandbox
+  397  ls
+  398  cd ..
+  399  cd data
+  400  mv file5.txt 
+  401  mv file5.txt ../sandbox/file5.txt
+  402  mv file5.txt ../sandbox/sandbox
+  403  mv file5.txt ../sandbox
+  404  mv file5.txt ../sanbox
+  405  ls
+  406  touch file5.txt
+  407  mv file5.txt unix/sanbox/
+  408  cd ..
+  409  mv data/file5.txt/ ./sandbox
+  410  mv file5.txt ./sandbox
+  411  cd data
+  412  mv file5.txt ../sandbox
+  413  cd ..
+  414  ls
+  415  ls dandbox
+  416  ls sandbox
+  417  cd data
+  418  mv sandbox/file5.txt .
+  419  mv ../sandbox/file5.txt .
+  420  ls
+  421  mv ./Buzzard2015_about.txt Buzzard-2015.txt
+  422  ls
+  423  cd ..
+  424  ls
+  425  cd sandbox
+  426  mkdir whateveruwant/whateveruwannacallit
+  427  mkdir wateveruwant
+  428  cd wateveruwannacallit
+  429  cd whateveruwant
+  430  cd wateveruwant
+  431  mkdir wateveruwannacallit
+  432  cd wateveruwannacallit
+  433  touch 1.txt 2.txt 3.txt 4.txt 5.txt
+  434  ls
+  435  rm *.txt
+  436  ls
+  437  touch meme1.txt meme2.txt meme3.txt meme4.txt meme5.txt
+  438  cd ..
+  439  pwd
+  440  ls whateveruwannacallit
+  441  ls wateveruwannacallit
+  442  rmdir wateveruwannacallit
+  443  rm -r -i wateveruwannacallit
+  444  ls
+  445  history
+  446  history n 429
+  447  history 10
+  448  history 25 > commands-used-in-class-1-16.txt
+  449  nano commands-used-in-class-1-16.txt
+  450  less commands-used-in-class-1-16.txt
+  451  cd ~
+  452  cd Developer/repos
+  453  cd csb
+  454  ls
+  455  cd unix
+  456  cd data
+  457  ls
+  458  less data/Marra2014.data.fasta
+  459  less data/Marra2014_data.fasta
+  460  less Marra2014_data.fasta
+  461  cat Marra2014_about.txt
+  462  wc Marra2014_about.txt
+  463  wc PAcifici2013_about.txt
+  464  wc Pacific2013_about.txt
+  465  wc Pacifici2013_about.txt
+  466  cat Pacifici2013_about.txt
+  467  history > 1-16-20
+  468  history > 1-16-20.txt
+  469  nano 1-16-20.txt
+  470  man wc
+  471  wc -l *.fasta
+  472  ls
+  473  head -5 *.txt
+  474  history > commands-1-16-20-class.txt
