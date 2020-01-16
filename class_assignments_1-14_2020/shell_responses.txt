@@ -1,0 +1,171 @@
+Creating Files a Different Way
+
+Commands Used:
+
+touch my_file.txt
+
+ls -s
+
+Explanations: 
+
+"touch" allows you to make a file so that, if you need to make a file that needs to go into a program that only works with pre-made files, one is already prepared for the program.
+
+I used "ls -s" instead of "ls -1" to find out the sizes of the files because, unlike what the tutorial claims, "ls -1" just displays the files in a column and does not show the files' sizes (Maybe this is just a product of an update in how the commands work? I do not know.).
+
+
+
+Moving Files to a New Folder
+
+Commands Used:
+
+mv sucrose.dat maltose.dat ../raw
+
+Explanations:
+
+The mv command requires you to start by writing the files you want to move followed by the the directory to which you want to move those files preceded by the directory containing the intended destination then a slash. ".." refers to the directory containing the current directory (known as the parent directory),
+
+
+Renaming Files
+
+Commands Used:
+
+mv statstics.txt statistics.txt
+
+Explananations:
+
+Using the "cp" command will copy the original file, so the file with the undesired name will remain in existence. For this reason, file renaming should be done with "mv." The name of the file to be renamed should then be listed, as this is the file that will be moved. This should be followed by the new name for the file. The new name for the file should not be the name of another directory, as this will move the file there instead of renaming it.
+
+
+
+Moving and Copying:
+
+Cmmands Used:
+
+pwd
+
+ls
+
+mkdir recombine
+
+mv proteins.dat recombine/
+
+cp recombine/proteins.dat ../proteins-saved.dat 
+
+ls 
+
+Explanations:
+
+"pwd" revealed that we started in /Users/jamie/data. We then typed "ls," which showed  that Users/jamie/data contained proteins.dat. We then typed "mkdir recombine" to make a directory within /Users/jamie/dat. "proteins.dat" was then moved into the newly made directory "recombine" by typing "mv proteins.dat recombine/." The command "cp recombine/proteins.dat ../proteins-saved.dat" was then typed, after which the command "ls" was typed to show the contents of the current directory. THe contents of the current directory, "data," were just the directory "recombine." The command "cp recombine/proteins.dat ../proteins-saved.dat" moved "proteins.dat" to the directory "above" the current one since it listed the destination of the file as "..," which is the directory above the curretly open directory. The directory open at this point was "data." Therefore, the file has now been moved to the higher level directory "jamie."
+
+
+
+Using rm Safely
+
+Commands Used:
+
+rm -i thesis_backup/quotations.txt
+
+Explanations:
+
+Adding "-i" after the "rm" command makes the computer ask us if we are sure that we want to execute the deletion we claimed we wanted to make. This is helpful because there is no trash bin in the shell from which accidentally deleted files can be recovered. Note that "rm" alone only works on files. "rm -r" (i.e. "rm" with a recursive option) allows us to delete a directory and everything in it without asking/warning us about the deletion before executing it. A warning can be given when deleting a directory by using "rm -r -i."
+
+
+
+Copy with Multiple Filenames
+
+Commands Used:
+
+mkdir backup
+
+cp notes.txt solar.pdf  backup/ (I realize this is different from the files used in the example, but it gets across the same concept.).
+
+Explanations:
+
+When given multiple files to copy in one command into "backup," "cp" copies them all into the listed directory successfully.
+
+Commands Used: 
+
+cp notes.txt solar.pdf basilisk.dat
+
+Explanations:
+
+When not given a directory to copy the files, "cp" triggers an error message.
+
+
+
+List Filenames Matching a Pattern
+
+Commands Used:
+
+cd molecules
+
+ls *t??ne.pdb
+
+Explanations:
+
+Wild cards are a way of manipulating the "ls" function so that a specific group of files is listed from within a directory. It utilizes symbols in a way analagous to regular expressions. A star in a search will match 0 or more characters, while a question mark will match one character only. THe search above was constructed in such a way that only one "ethane.pdb" and "methane.pdb" would be listed.
+
+
+
+More on Wildcards:
+
+Commands Used:
+
+cp *dataset* backup/datasets
+
+cp *calbration.txt backup/calibration
+
+cp 2015-11-* sent_to_bob/all_november files
+
+cp *-23-dataset* send_to_bob/all_datasets_created_on_a_23rd/
+
+Explanations:
+
+In very basic terms, the way to fill out each command is to write out  what is common among all the files that need to get copied into each directory and then add stars where differences occur.
+
+
+
+Organizing Directories and Files
+
+Commands Used:
+
+mv *.dat analyzed
+
+Explanations:
+
+The files Jamie wants to move into "analyzed" are all the ".dat" files in the directory she had open in that moment, so she could use a wildcard to quickly move both of them into "analyzed."
+
+
+
+Reproduce a Folder Structure:
+
+Commands used:
+
+mkdir 2016-05-20
+
+mkdir 2016-05-20/data
+
+mkdir 2016-05-20/data/processed
+
+mkdir 2016-05020/data/raw
+
+
+OR
+
+
+
+mkdir 2016-05-20
+
+cd 2016-05-20
+
+mkdir data
+
+cd data
+
+mkdir raw processed
+
+
+Explanations:
+
+The first set of commands produces the desired result because the slashes accurately define the desired breakdown of how the files are supposed to be organized (The use of slashes for this purpose is known as use of relative paths.). The second set of commands uses a different method to achieve the same goal. It changes directories ("cd") in order to make new directories while inside previously made directories. The third set of commands will trigger an error message because no directory named "data" exists yet. The fourth set of commands will make directories called "data," "raw," and "processed" all within " 2016-05-20" at the same level. 
+  
