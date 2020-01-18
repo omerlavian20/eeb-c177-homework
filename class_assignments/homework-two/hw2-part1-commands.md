@@ -17,7 +17,7 @@
  mv csb/unix/sandbox/paragraphs.txt .  
  mv csb/unix/sanbox/paragraphs.txt/ .  
  mv pargraphs.txt .  
- mv paragraphs.txt .
+ mv paragraphs.txt .  
  mv ~/Developer/repos/csb/unix/sandbox/paragraphs.txt .  
  ls  
  cd ~/Developer/repos/csb/unix/sandbox  
