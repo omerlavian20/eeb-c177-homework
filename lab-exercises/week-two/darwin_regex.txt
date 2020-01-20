@@ -1,5 +1,13 @@
 Darwin Answers
 
-1.) \ss\w+
+1.) \bs\w+\b
 
-2.) \w+((\.)|(\?)|(\!))
+2.) \w+(?=\.|\?|\!)
+
+3.) \w+[^\.\!\?]*
+
+I used this page as a reference:
+https://stackoverflow.com/questions/20320719/constructing-regex-pattern-to-match-sentence
+
+4.) How.*regard to variation
+
