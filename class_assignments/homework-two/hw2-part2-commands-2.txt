@@ -1,0 +1,3 @@
+  625  cd ~/Developer/repos/csb/unix/data/
+  626  ls
+  627  head -25 Pacifici2013_data.csv | wc
