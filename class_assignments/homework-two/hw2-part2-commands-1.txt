@@ -1,0 +1,20 @@
+  601  ls
+  602  cd class_assignments
+  603  ls
+  604  cd homework-two
+  605  ls
+  606  cd ~/Developer/repos/csb/unix/data
+  607  ls
+  608  head -25 Pacifici2013_data.csv 
+  609  head -25 Pacifici2013_data.csv > Pacifici-25lines.txt
+  610  ls
+  611  mv Pacifici-25lines.txt ~/Developer/repos/eeb-c177-homework/class_assignments/homework-two/
+  612  cd ~/Developer/repos/eeb-c177-homework/class_assignments/homework-two
+  613  ls
+  614  wc Pacifici-25lines.txt 
+  615  head -25 Pacifici-25lines.txt 
+  616  head -25 Pacifici-25lines.txt > Pacifici-25wordcount.txt
+  617  wc Pacifici-25wordcount.txt
+  618  nano Pacifici-25wordcount.txt
+  619  history
+  620  history 20 > hw2-part2-commands-1.txt
