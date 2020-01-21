@@ -1,1 +1,44 @@
-Meme
+  813  cd ~/Developers/repos/eeb-c177-homework/class_assignments
+  814  nano tuesday-class-1-21.txt
+  815  git add -A
+  816  git commit -m "classwork"
+  817  git push origin master
+  818  cd ~/Developers/repos/csb/unix/data/
+  819  head -n 1 Pacifici2013_data.csv 
+  820  nano Pacifici2013_data.csv 
+  821  head -n 1 Pacifici2013_data.csv 
+  822  man wc
+  823  head -n 1 Pacifici2013_data.csv | wc -w
+  824  head -n 1 Pacifici2013_data.csv 
+  825  head -n 1 Pacifici2013_data.csv | cut -d ";" -f 1-4
+  826  head -n 1 Pacifici2013_data.csv | cut -d ";" -f 1-6
+  827  head -n 5 Pacifici2013_data.csv 
+  828  cut -d ";" -f 2 Pacifici2013_data.csv | head -n 5 | tail -n +2
+  829  wc -l Pacifici2013_data.csv 
+  830  cut -d ";" -f 2 | tail -n +2 | head -n 5
+  831  cut -d ";" -f 2 | tail -n +2 | head -n 5 > tuesday-class-1-21.txt
+  832  cut -d ";" -f 2 Pacifici2013_data.csv | head -n 5 > tuesday-class-1-21.txt
+  833  nano tuesday-class-1-21.txt 
+  834  tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 2 | head -n 5 > tuesday-class-1-21.txt
+  835  nano tuesday-class-1-21.txt
+  836  man sort
+  837  tail -n +2 Pacifici2013_data.csv | cut -d "
+  838  tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 2 | sort -d | uniq
+  839  tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 2 | sort -d | uniq | wc -l
+  840  tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 2 | uniq | wc -l
+  841  nano tuesday-class-1-21.txt 
+  842  tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 2 | sort -n | uniq
+  843  tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 2-6 | tr -s ";" " " | sort -r -n -k 6 > bodyM.csv
+  844  head -10 bodyM.csv 
+  845  less Pacifici2013_data.csv 
+  846  man sort
+  847  tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 4-6 | tr -s ";" "_ " | sort -r -n -k 3
+  848  less bodyM.csv 
+  849  wc -l bodyM.csv 
+  850* tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 4-6 | sort -r -n -k 3
+  851  wc -l bodyM.csv 
+  852  mv bodyM.csv ~/Developers/repos/eeb-c177-homework/class_assignments
+  853  ls
+  854  mv tuesday-class-1-21.txt ~/Developers/repos/eeb-c177-homework/class_assignments
+  855  cd ~/Developers/repos/eeb-c177-homework/class_assignments
+  856  history 44 > tuesday-class-1-21.txt 
