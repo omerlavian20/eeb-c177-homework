@@ -1,0 +1,5 @@
+  745  mv Pacifici-ten.txt ~/Developers/repos/eeb-c177-homework/class_assignments/homework-two/
+  746  cd  ~/Developers/repos/eeb-c177-homework/class_assignments/homework-two/
+  747  ls
+  748  less Pacifici-ten.txt
+  749  history 5 > hw2-part3-commands.txt
