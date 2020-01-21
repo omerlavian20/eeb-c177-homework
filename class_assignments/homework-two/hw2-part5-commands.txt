@@ -1,0 +1,8 @@
+
+
+
+   
+    tail -n +2 Pacifici2013_data.csv | cut -d ";" -f 2-6 | tr ";" " " | sort -r -n -k 6 > bodym.csv
+    less bodym.csv 
+    mv bodym.csv ~/Developers/repos/eeb-c177-homework/class_assignments/homework-two
+   
