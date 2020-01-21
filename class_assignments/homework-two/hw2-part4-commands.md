@@ -1,4 +1,4 @@
- **Part 5 Commands**
+ **Part 4 Commands**
 
  sort fish_species.txt > fishes-sort.txt
 
