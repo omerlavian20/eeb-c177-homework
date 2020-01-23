@@ -22,7 +22,7 @@ $ tail -n +2 European_Red_List.csv | cut -d "," -f 10 | sort | uniq -c
 
 $ tail -n +2 European_Red_List.csv | cut -d "," -f 4 | sort | uniq -c
 
-1604 ACTINOPTERYGII
+   1604 ACTINOPTERYGII
      89 AMPHIBIA
     533 AVES
      54 BIVALVIA
@@ -54,7 +54,3 @@ $ tail -n +2 European_Red_List.csv | cut -d "," -f 4-10 | sort -k 1 | tail -n +1
      32 NT
       4 RE
 
-
-
-
-COULD NOT COMPLETE LASR QUESTION
