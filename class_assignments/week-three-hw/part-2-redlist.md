@@ -45,6 +45,10 @@ $ tail -n +2 European_Red_List.csv | cut -d "," -f 4 | sort | uniq -c
      13 PSILOTOPSIDA
     148 REPTILIA
 
+
+
+
+
 $ tail -n +2 European_Red_List.csv | cut -d "," -f 4-10 | sort -k 1 | tail -n +1694 | head -n 533 | cut -d "," -f 7 | sort | uniq -c
 
      10 CR
@@ -53,10 +57,15 @@ $ tail -n +2 European_Red_List.csv | cut -d "," -f 4-10 | sort -k 1 | tail -n +1
     428 LC
      32 NT
       4 RE
+     39 VU  
 
 
 
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR"
+
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR"
+
 ACCIPITRIFORMES,ACCIPITRIDAE,Aquila,nipalensis,No,CR
 CHARADRIIFORMES,CHARADRIIDAE,Vanellus,gregarius,No,CR
 CHARADRIIFORMES,SCOLOPACIDAE,Numenius,tenuirostris,No,CR
@@ -67,42 +76,91 @@ PASSERIFORMES,ALAUDIDAE,Melanocorypha,yeltoniensis,No,CR
 PASSERIFORMES,EMBERIZIDAE,Emberiza,aureola,No,CR
 PROCELLARIIFORMES,PROCELLARIIDAE,Puffinus,mauretanicus,Yes,CR
 STRIGIFORMES,STRIGIDAE,Ketupa,zeylonensis,No,CR
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "ACCIPITRIFORMES" 
+
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "ACCIPITRIFORMES" 
+
+
 ACCIPITRIFORMES,ACCIPITRIDAE,Aquila,nipalensis,No,CR
-\(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "ACCIPITRIFORMES" | wc -l 
+
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "ACCIPITRIFORMES" | wc -l 
+
+
 1
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "CHARADRIIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "CHARADRIIFORMES" | wc -l
+
+
 3
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "OTIDIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "OTIDIFORMES" | wc -l
+
+
 1
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "PASSERIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "PASSERIFORMES" | wc -l
+
 3
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "PROCELLARIIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "PROCELLARIIFORMES" | wc -l
+
+
 1
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "STRIGIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "CR" | grep -w  "STRIGIFORMES" | wc -l
+
+
 1
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "EX" | grep -w  "STRIGIFORMES"
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "EX" 
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "EX"
+
+ 
 CHARADRIIFORMES,ALCIDAE,Pinguinus,impennis,No,EX
 CHARADRIIFORMES,HAEMATOPODIDAE,Haematopus,meadewaldoi,Yes,EX
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "EX" | grep -w "CHARADRIIFORMES"
-CHARADRIIFORMES,ALCIDAE,Pinguinus,impennis,No,EX
-CHARADRIIFORMES,HAEMATOPODIDAE,Haematopus,meadewaldoi,Yes,EX
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "EX" | grep -w "CHARADRIIFORMES" | wc
-      2       2     110
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "EX" | grep -w "CHARADRIIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "EX" | grep -w "CHARADRIIFORMES" | wc -l
+
+
 2
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE"
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE"
+
+
 CHARADRIIFORMES,CHARADRIIDAE,Charadrius,asiaticus,No,RE
 PASSERIFORMES,SYLVIIDAE,Sylvia,nana,No,RE
 PELECANIFORMES,THRESKIORNITHIDAE,Geronticus,eremita,No,RE
 SULIFORMES,ANHINGIDAE,Anhinga,rufa,No,RE
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE" | grep -w "CHARADRIIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE" | grep -w "CHARADRIIFORMES" | wc -l
+
 1
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE" | grep -w "PASSERIFORMES" | wc -l
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE" | grep -w "PASSERIFORMES" | wc -l
+
+
 1
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE" | grep -w "PELECANIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE" | grep -w "PELECANIFORMES" | wc -l
+
+
 1
-(base) eebc177student@eebc177student-VirtualBox:~/Developers/repos/eeb-c177-homework/class_assignments/week-three-hw$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE" | grep -w "SULIFORMES" | wc -l
+
+
+$ grep AVES European_Red_List.csv  | grep -w -E "EX|RE|CR" | cut -d "," -f 5-10 | grep -w "RE" | grep -w "SULIFORMES" | wc -l
+
+
 1
 
